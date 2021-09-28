@@ -1,0 +1,93 @@
+/* A Modern CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1024px;
+  margin: 0 4rem;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.column {
+  flex-direction: column !important;
+}
+
+.button {
+  max-width: 100px;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.px-1 {
+  padding: 1rem 0;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
